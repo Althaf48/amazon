@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/bgdark"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:gravity="center"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <TextView
+        android:id="@+id/usernamenavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textColor="#FFF"
+        android:text="Hello"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+  <!--  <TextView
+        android:id="@+id/navigationheadername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textColor="#FFF"
+        android:text="Altaf"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    -->
+
+</LinearLayout>
+
+    <!--/*Developer : ALtaf Mulla
+        * Date   : 28-01-2020
+        * Desc   :          */
+        /*===========*/-->

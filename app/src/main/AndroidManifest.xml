@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.antsecommerce1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splashscreen"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/splashscreen"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".AddproductGrocery_screen"></activity>
+        <activity android:name=".ProductDetailsEdit_Screen" />
+        <activity android:name=".Manage_Productlist_Screen" />
+        <activity android:name=".Ui_screens_activity" />
+        <activity android:name=".Producttosell_screen" />
+        <activity android:name=".ProfileUpdate_screen" />
+        <activity android:name=".Taxdetails_Screen" />
+        <activity android:name=".Forgotpassword_validationscreen" />
+        <activity android:name=".Bank_Account_Details" />
+        <activity android:name=".Homepage_Customer" />
+        <activity android:name=".Homepageseller" />
+        <activity android:name=".Resetpassword_screen" />
+        <activity android:name=".Chnagepassword_screen" />
+        <activity android:name=".Verifyaccount_screen" />
+        <activity android:name=".Forgotpw_screen" />
+        <activity android:name=".Signup_screen" />
+        <activity android:name=".Login_screen" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+    </application>
+
+</manifest>

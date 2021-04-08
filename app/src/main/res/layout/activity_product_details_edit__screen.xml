@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgdark"
+    tools:context=".ProductDetailsEdit_Screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bgcardwhite">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name :"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#AEACAC"
+                    android:cursorVisible="false"
+                    android:focusable="false"/>
+
+                <EditText
+                    android:id="@+id/productdetaileditname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inputboxgrey"
+                    android:hint=""
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:cursorVisible="false"
+                    android:focusable="false"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SKU :"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#AEACAC"
+                    android:cursorVisible="false"
+                    android:focusable="false"/>
+
+                <EditText
+                    android:id="@+id/productdetaileditsku"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inputboxgrey"
+                    android:hint=" "
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:cursorVisible="false"
+                    android:focusable="false"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MRP :"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#AEACAC" />
+
+                <EditText
+                    android:id="@+id/productdetaileditmrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inputboxgrey"
+                    android:hint=" "
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price :"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#AEACAC" />
+
+
+
+                <EditText
+                    android:id="@+id/productdetaileditprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inputboxgrey"
+                    android:hint=" "
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Availability :"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#AEACAC" />
+
+
+
+                <EditText
+                    android:id="@+id/productdetaileditavailability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inputboxgrey"
+                    android:hint=" "
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Status:"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#AEACAC" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/activeproductdetails"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:text="Active">
+
+                    </CheckBox>
+                    <CheckBox
+                        android:id="@+id/inactiveproductdetails"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:text="InActive">
+
+                    </CheckBox>
+
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/updateproductdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:background="#555555"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="#555555">
+
+                    <TextView
+                        android:id="@+id/savelisting_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Update"
+                        android:textSize="17sp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:gravity="center"/>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/signnewsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:background="#555555"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="#C53D11"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/signnewsctv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="test btn"
+                        android:textSize="17sp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:gravity="center"/>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

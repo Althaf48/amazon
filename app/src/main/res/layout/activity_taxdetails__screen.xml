@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgdark"
+    tools:context=".Taxdetails_Screen">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Enter Tax Details"
+                                android:textSize="18sp"
+                                android:padding="5dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:textColor="#FFF"
+                                android:textStyle="bold"
+                                android:gravity="center"/>
+
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Update your Tax Details for state"
+                                android:textSize="15sp"
+                                android:padding="5dp"
+                                android:gravity="center_horizontal"
+                                android:layout_margin="5dp"
+                                android:textColor="#555555" />
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:background="#ABABAB">
+
+                            </View>
+
+                            <EditText
+                                android:id="@+id/pancardid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/inputboxgrey"
+                                android:hint="Enter you PAN Number"
+                                android:textSize="15sp"
+                                android:layout_margin="10dp"
+                                android:padding="10dp"/>
+
+
+
+                            <EditText
+                                android:id="@+id/gstid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/inputboxgrey"
+                                android:hint="GST Number"
+                                android:textSize="15sp"
+                                android:layout_margin="10dp"
+                                android:padding="10dp"/>
+
+
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/signup_cv_t"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="10dp"
+                                android:background="#555555"
+                                android:layout_margin="20dp"
+                                app:cardBackgroundColor="#555555">
+
+                                <TextView
+                                    android:id="@+id/savetaxdetails_t"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Save"
+                                    android:textSize="17sp"
+                                    android:padding="5dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

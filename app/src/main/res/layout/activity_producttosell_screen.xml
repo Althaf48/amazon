@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgdark"
+    tools:context=".Producttosell_screen"
+    android:theme="@style/AppTheme.PopupOverlay">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+       <!-- <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Products"
+                android:layout_gravity="center"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/toolbar_title" />
+
+        </androidx.appcompat.widget.Toolbar>-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bgcardwhite">
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/add_prodid_cv"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="160dp"
+                            app:cardCornerRadius="10dp"
+                            android:background="#555555"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="#C53D11">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:padding="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:padding="5dp"
+                                    android:src="@drawable/add_product"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add Product"
+                                    android:textSize="13sp"
+                                    android:padding="2dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="(Single Product Upload)"
+                                    android:textSize="10sp"
+                                    android:padding="2dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/manage_prodid_cv"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="160dp"
+                            app:cardCornerRadius="10dp"
+                            android:background="#555555"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="#C53D11">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:padding="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:padding="5dp"
+                                    android:src="@drawable/manage_product_list"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Manage Product list"
+                                    android:textSize="13sp"
+                                    android:padding="2dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="(View &amp; Edit List of Products)"
+                                    android:textSize="10sp"
+                                    android:padding="2dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/uploadproduct_cv"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="160dp"
+                            app:cardCornerRadius="10dp"
+                            android:background="#555555"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="#C53D11">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:padding="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:padding="5dp"
+                                    android:src="@drawable/upload_products"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Upload Products"
+                                    android:textSize="13sp"
+                                    android:padding="2dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="(Bulk Products Upload)"
+                                    android:textSize="10sp"
+                                    android:padding="2dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/sellertemplate_cv"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="160dp"
+                            app:cardCornerRadius="10dp"
+                            android:background="#555555"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="#C53D11">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:padding="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:padding="5dp"
+                                    android:src="@drawable/seller_templates"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Product Templates"
+                                    android:textSize="13sp"
+                                    android:padding="2dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="(Download seller Products lists)"
+                                    android:textSize="10sp"
+                                    android:padding="2dp"
+                                    android:textColor="#fff"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_addproduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Add Product"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#C53D11"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Choose Add Product Category"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="5dp"
+                            android:padding="5dp"
+                            />
+
+
+
+                        <CheckBox
+                            android:id="@+id/clothingaddproductcbid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:text="Clothing">
+
+                        </CheckBox>
+                        <CheckBox
+                            android:id="@+id/electronicsaddproductcbid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:text="Electronics">
+
+                        </CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/groceriesaddproductcbid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:text="Groceries">
+
+                        </CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/shoesaddproductcbid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:text="Shoes">
+
+                        </CheckBox>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10dp"
+                            android:background="#555555"
+                            android:layout_margin="20dp"
+                            app:cardBackgroundColor="#555555">
+
+                            <TextView
+                                android:id="@+id/addproducttv_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Add Product"
+                                android:textSize="15sp"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:textColor="#fff"
+                                android:gravity="center"/>
+
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_Uploadproducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Upload Files"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#C53D11"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:background="#C8C7C7">
+
+                        </View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="File Type :"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:textColor="#000" />
+
+
+
+
+
+
+
+
+                        <Spinner
+                            android:id="@+id/selectfilespinners"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:entries="@array/selectfile"
+                            android:background="@drawable/inputboxgrey"
+                            android:spinnerMode="dropdown" />
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="File Upload :"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:textColor="#000" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/browseid"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/inputboxgrey"
+                                android:text="Browse"
+                                android:gravity="center_horizontal"
+                                android:textSize="15sp"
+                                android:layout_margin="10dp"
+                                android:padding="10dp"/>
+
+                            <TextView
+                                android:id="@+id/browsetex_id"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="No File Selected"
+                                android:gravity="center_horizontal"
+                                android:textSize="13sp"
+                                android:layout_margin="10dp"
+                                android:padding="10dp"/>
+
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:background="#ABABAB">
+
+                        </View>
+
+
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/signup_cv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10dp"
+                            android:background="#555555"
+                            android:layout_margin="20dp"
+                            app:cardBackgroundColor="#555555">
+
+                            <TextView
+                                android:id="@+id/saveproducttosell_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Upload"
+                                android:textSize="15sp"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:textColor="#fff"
+                                android:gravity="center"/>
+
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_producttemplates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                       android:visibility="gone">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seller Templates List"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#C53D11"
+                            android:textStyle="bold"
+                            android:padding="5dp"
+                            />
+
+
+
+
+                        <CheckBox
+                            android:id="@+id/electrinicsxlsxid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:text="Electronics.xlsx">
+
+                        </CheckBox>
+                        <CheckBox
+                            android:id="@+id/groceriesxlsxid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:text="Groceries.xlsx">
+
+                        </CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/clothesxlsxid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:text="Clothes.xlsx">
+
+                        </CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/shoesxlsxid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:text="Shoes.xlsx">
+
+                        </CheckBox>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10dp"
+                            android:background="#555555"
+                            android:layout_margin="20dp"
+                            app:cardBackgroundColor="#555555">
+
+                            <TextView
+                                android:id="@+id/download_tvid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Download"
+                                android:textSize="17sp"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:textColor="#fff"
+                                android:gravity="center"/>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+
+
+                   <!-- <androidx.cardview.widget.CardView
+                        android:id="@+id/signup_cv_sellinghomepage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        android:background="#555555"
+                        android:layout_margin="20dp"
+                        app:cardBackgroundColor="#C53D11">
+
+                        <TextView
+                            android:id="@+id/savelisting_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Download"
+                            android:textSize="17sp"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:gravity="center"/>
+
+
+
+
+                    </androidx.cardview.widget.CardView>-->
+
+
+
+                </LinearLayout>
+
+
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+   </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

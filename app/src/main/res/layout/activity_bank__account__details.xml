@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgdark"
+    tools:context=".Bank_Account_Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bank Account Details"
+                                android:textSize="17sp"
+                                android:padding="5dp"
+                                android:textColor="#ffffff"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center"/>
+
+
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Account Holder Name :"
+                                android:textSize="15sp"
+                                android:padding="5dp"
+                                android:layout_margin="5dp"
+                                android:textColor="#AEACAC" />
+
+                            <EditText
+                                android:id="@+id/accountholdernameid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/inputboxgrey"
+                                android:hint="Name as on bank documents"
+                                android:textSize="15sp"
+                                android:layout_margin="10dp"
+                                android:padding="10dp"/>
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Account Type :"
+                                android:textSize="15sp"
+                                android:padding="5dp"
+                                android:layout_margin="5dp"
+                                android:textColor="#AEACAC" />
+
+                            <EditText
+                                android:id="@+id/accounttypeid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/inputboxgrey"
+                                android:hint="Select you Account Type"
+                                android:textSize="15sp"
+                                android:layout_margin="10dp"
+                                android:padding="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Account Number :"
+                                android:textSize="15sp"
+                                android:padding="5dp"
+                                android:layout_margin="5dp"
+                                android:textColor="#AEACAC" />
+
+                            <EditText
+                                android:id="@+id/accountnumberid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/inputboxgrey"
+                                android:hint="upto 34 characters"
+                                android:textSize="15sp"
+                                android:layout_margin="10dp"
+                                android:padding="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Re-Enter Account Number :"
+                                android:textSize="15sp"
+                                android:padding="5dp"
+                                android:layout_margin="5dp"
+                                android:textColor="#AEACAC" />
+
+                            <EditText
+                                android:id="@+id/reenteraccountnumberid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/inputboxgrey"
+                                android:hint="upto 34 charecters"
+                                android:textSize="15sp"
+                                android:layout_margin="10dp"
+                                android:padding="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="IFSC Code :"
+                                android:textSize="15sp"
+                                android:padding="5dp"
+                                android:layout_margin="5dp"
+                                android:textColor="#AEACAC" />
+
+                            <EditText
+                                android:id="@+id/ifscid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/inputboxgrey"
+                                android:hint="Example : EFGH01234567"
+                                android:textSize="15sp"
+                                android:layout_margin="10dp"
+                                android:padding="10dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/signup_cv"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="10dp"
+                                    android:background="#555555"
+                                    android:layout_margin="20dp"
+                                    app:cardBackgroundColor="#555555">
+
+                                    <TextView
+                                        android:id="@+id/savebankdetailsid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Save"
+                                        android:textSize="17sp"
+                                        android:padding="5dp"
+                                        android:textStyle="bold"
+                                        android:textColor="#fff"
+                                        android:gravity="center"/>
+
+
+                                </androidx.cardview.widget.CardView>
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/signup_cv2"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="10dp"
+                                    android:background="#555555"
+                                    android:layout_margin="20dp"
+                                    app:cardBackgroundColor="#555555">
+
+                                    <TextView
+                                        android:id="@+id/savebankdetailsid2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Update"
+                                        android:textSize="17sp"
+                                        android:padding="5dp"
+                                        android:textStyle="bold"
+                                        android:textColor="#fff"
+                                        android:gravity="center"/>
+
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

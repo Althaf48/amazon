@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home3"
+            android:title="Home"
+            android:icon="@drawable/icon_home" />
+
+        <item
+            android:id="@+id/nav_home2"
+            android:title="Profile"
+            android:icon="@drawable/icon_sellers" />
+
+        <item
+            android:id="@+id/bankdetailspage"
+            android:title="Bank Account Details"
+            android:icon="@drawable/bank_icon"
+            />
+
+        <item
+            android:id="@+id/taxdetailsid"
+            android:title="Tax Details"
+            android:icon="@drawable/product_tax_icon"
+            />
+
+       <!-- <item
+            android:title="Electronics"
+            android:icon="@drawable/dashboard_icon_foreground" />
+
+        <item
+            android:title="Fashion"
+            android:icon="@drawable/dashboard_icon_foreground" />
+
+        <item
+            android:title="Explore all categories"
+            android:icon="@drawable/dashboard_icon_foreground" />-->
+
+
+
+        <item
+            android:id="@+id/signout1"
+            android:title="Logout"
+            android:icon="@drawable/icon_logout"
+            app:showAsAction="always"/>
+
+    </group>
+
+
+    <group android:checkableBehavior="single">
+       <!-- <item
+            android:title="My Orders"
+            android:icon="@drawable/dashboard_icon_foreground" />
+
+        <item
+            android:title="My Account"
+            android:icon="@drawable/dashboard_icon_foreground" />
+
+        <item
+            android:title="My Notifications"
+            android:icon="@drawable/dashboard_icon_foreground" />
+
+        <item
+            android:title="My Wishlist"
+            android:icon="@drawable/dashboard_icon_foreground" />
+
+        <item
+            android:title="My Coupon"
+            android:icon="@drawable/dashboard_icon_foreground" />-->
+
+
+
+    </group>
+
+    <!--<group android:checkableBehavior="single">
+        <item
+            android:title="Seller"
+            android:icon="@drawable/dashboard_icon_foreground" />
+
+        <item
+            android:title="Stores"
+            android:icon="@drawable/dashboard_icon_foreground" />
+
+        <item
+            android:title="Help Center"
+            android:icon="@drawable/dashboard_icon_foreground" />
+
+        <item
+            android:title="Logout"
+            android:icon="@drawable/dashboard_icon_foreground" />
+
+
+    </group>-->
+
+
+
+
+    <!--<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/notifications"
+            android:title="Notifications"
+            android:icon="@drawable/notification_icon_foreground"
+            />
+
+    </group>-->
+
+
+
+
+
+
+</menu>
+    <!--/*Developer : ALtaf Mulla
+        * Date   :
+        * Desc   :          */
+        /*===========*/-->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="uploadImages">
+        <item>Pick from Gallery</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="uploadFile">
+        <item>Pick from File manager</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="itemIds">
+        <item>Open file manager</item>
+        <item>Cancel</item>
+    </string-array>
+
+</resources>

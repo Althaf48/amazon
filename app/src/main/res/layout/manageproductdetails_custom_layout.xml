@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#ffffff"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/productimg1"
+                android:layout_width="110dp"
+                android:layout_height="140dp"
+                android:src="@drawable/shirt2"
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+
+            <TextView
+                android:id="@+id/productvariantnameid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Color Block Men Round T-Shirt"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_toRightOf="@id/productimg1"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                />
+
+            <TextView
+                android:id="@+id/skuid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SKU"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:textSize="9sp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@id/productimg1"
+                android:layout_below="@id/productvariantnameid"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="#C53D11"
+                />
+
+            <TextView
+                android:id="@+id/number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#CBM3532"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="9sp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@id/skuid"
+                android:layout_below="@id/productvariantnameid"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="#C53D11"
+                />
+            <TextView
+                android:id="@+id/active1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACTIVE"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="2dp"
+                android:textSize="9sp"
+                android:layout_toRightOf="@id/number1"
+                android:layout_below="@id/productvariantnameid"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="#17E610"
+                />
+
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MRP"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="9sp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@id/active1"
+                android:layout_below="@id/productvariantnameid"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="#C53D11"
+                />
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23 July 2020"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="9sp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@id/date2"
+                android:layout_below="@id/productvariantnameid"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="#C53D11"
+                />
+
+            <TextView
+                android:id="@+id/variantid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23 July 2020"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="9sp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@id/date2"
+                android:layout_below="@id/productvariantnameid"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="#C53D11"
+                android:visibility="gone"
+                />
+
+            <View
+                android:id="@+id/viewproductlist1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#555555"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/productimg1"
+                android:layout_below="@id/active1">
+
+            </View>
+
+
+
+            <TextView
+                android:id="@+id/edit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textSize="9sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@id/productimg1"
+                android:layout_below="@id/viewproductlist1"
+                android:padding="2dp"
+                android:background="#C53D11"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                />
+
+            <TextView
+                android:id="@+id/piecesavalablecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="9sp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@id/edit1"
+                android:layout_below="@id/viewproductlist1"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                />
+
+            <TextView
+                android:id="@+id/piecesavalable1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pieces Available"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="9sp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@id/piecesavalablecount"
+                android:layout_below="@id/viewproductlist1"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                />
+
+            <TextView
+                android:id="@+id/rupeessymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rs"
+                android:textSize="9sp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@id/piecesavalable1"
+                android:layout_below="@id/viewproductlist1"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="#C53D11"
+                />
+
+
+
+            <TextView
+                android:id="@+id/rupeesnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="320"
+                android:textSize="9sp"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@id/rupeessymbol"
+                android:layout_below="@id/viewproductlist1"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="#C53D11"
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
