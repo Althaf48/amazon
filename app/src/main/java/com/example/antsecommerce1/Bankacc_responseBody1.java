@@ -4,7 +4,6 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Bankacc_responseBody1 {
-
     @SerializedName("seller_id")
     @Expose
     private Integer sellerId;
